@@ -1,0 +1,10 @@
+<h1>secureme-scanner</h1>
+<p>SecureMe operates an external attack-surface scanner that checks
+whether our customers' own systems are publicly exposed.</p>
+<p>Every request from us identifies itself as:</p>
+<pre>secureme-scanner/&lt;version&gt; (+https://secureme.space/bot)</pre>
+<p>Every request also carries a <code>From:</code> header set to
+<a href="mailto:abuse@secureme.space">abuse@secureme.space</a>.</p>
+<p>Our scanner only ever connects from IP addresses listed in
+<a href="/ranges.txt">ranges.txt</a>. If a request claims to be us
+but comes from outside those ranges, it is not us — please report it.</p>
